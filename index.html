@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bibliothèque des mémoires | Promotion d'art-thérapie</title>
+    <meta
+      name="description"
+      content="Bibliothèque des mémoires de promotion en art-thérapie, espace de consultation et de transmission des recherches étudiantes."
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="./index.html">Atelier des Mémoires</a>
+        <nav aria-label="Navigation principale">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="./index.html" aria-current="page">Accueil</a></li>
+            <li><a class="nav-link" href="./library.html">Bibliothèque</a></li>
+            <li><a class="nav-link" href="./about.html">À propos</a></li>
+            <li>
+              <button id="logout-button" class="button secondary hidden" type="button">Se déconnecter</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="page page-enter">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div>
+            <span class="tag">Promotion 2022-2024 · École d'art-thérapie</span>
+            <h1>Une bibliothèque vivante des mémoires de promotion</h1>
+            <p>
+              Cet espace rassemble les mémoires de fin de cursus en art-thérapie. Chaque travail témoigne d'un
+              chemin de recherche sensible, ancré dans la création, l'écoute et l'accompagnement.
+            </p>
+            <p>
+              La bibliothèque est consultable en ligne dans une interface conçue pour la lecture, la concentration et
+              la transmission des pratiques.
+            </p>
+            <div style="display: flex; gap: 0.7rem; flex-wrap: wrap; margin-top: 1rem">
+              <a class="button" href="./library.html">Accéder à la bibliothèque</a>
+              <a class="button secondary" href="./about.html">Découvrir le projet</a>
+            </div>
+          </div>
+          <div class="hero-art" aria-hidden="true"></div>
+        </div>
+      </section>
+
+      <section class="container" style="padding-bottom: 2rem">
+        <h2 class="section-title">Une consultation pensée comme un lieu de soin et de réflexion</h2>
+        <p class="section-subtitle">
+          Interface sobre, ressources locales auto-hébergeables et navigation fluide pour préserver une expérience
+          de lecture calme et professionnelle.
+        </p>
+
+        <div class="cards-grid">
+          <article class="feature-card">
+            <h3>Protection d'accès légère</h3>
+            <p>
+              L'entrée dans la bibliothèque est protégée par un mot de passe vérifié côté client via hash, adapté à
+              un site statique sur GitHub Pages.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Consultation intégrée</h3>
+            <p>
+              Les mémoires PDF sont affichés dans une visionneuse locale PDF.js, sans bouton de téléchargement ou
+              d'impression dans l'interface.
+            </p>
+          </article>
+          <article class="feature-card">
+            <h3>Maintenance simple</h3>
+            <p>
+              Ajouter un mémoire consiste à déposer un PDF, une couverture optionnelle, puis compléter une entrée dans
+              le fichier de données JSON.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Bibliothèque de promotion · École d'art-thérapie · Site statique auto-hébergeable</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/site.js"></script>
+  </body>
+</html>

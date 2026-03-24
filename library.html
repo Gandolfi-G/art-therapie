@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bibliothèque des mémoires | Atelier des Mémoires</title>
+    <meta
+      name="description"
+      content="Bibliothèque filtrable des mémoires de promotion en art-thérapie : recherche, filtres et consultation intégrée."
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script type="module" src="./js/guard.js"></script>
+  </head>
+  <body class="requires-auth auth-pending">
+    <noscript>
+      <div class="container" style="margin-top: 2rem">
+        <p class="error">JavaScript est nécessaire pour vérifier l'accès et afficher la bibliothèque.</p>
+      </div>
+    </noscript>
+
+    <div class="site-shell">
+      <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+      <header class="site-header">
+        <div class="container">
+          <a class="brand" href="./index.html">Atelier des Mémoires</a>
+          <nav aria-label="Navigation principale">
+            <ul class="nav-list">
+              <li><a class="nav-link" href="./index.html">Accueil</a></li>
+              <li><a class="nav-link" href="./library.html" aria-current="page">Bibliothèque</a></li>
+              <li><a class="nav-link" href="./about.html">À propos</a></li>
+              <li>
+                <button id="logout-button" class="button secondary" type="button">Se déconnecter</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main id="main-content" class="page page-enter">
+        <section class="container panel" aria-labelledby="library-title">
+          <h1 id="library-title" class="section-title">Bibliothèque des mémoires</h1>
+          <p class="section-subtitle">
+            Recherchez un mémoire par mot-clé, année, auteur/autrice ou thème.
+          </p>
+
+          <form id="filter-form" class="filters" autocomplete="off">
+            <div class="field" style="margin-bottom: 0">
+              <label for="search-input">Recherche texte</label>
+              <input
+                id="search-input"
+                name="search"
+                type="search"
+                placeholder="Titre, auteur/autrice, résumé, thème..."
+              />
+            </div>
+            <div class="field" style="margin-bottom: 0">
+              <label for="year-filter">Année</label>
+              <select id="year-filter" name="year">
+                <option value="">Toutes</option>
+              </select>
+            </div>
+            <div class="field" style="margin-bottom: 0">
+              <label for="author-filter">Auteur/autrice</label>
+              <select id="author-filter" name="author">
+                <option value="">Tous</option>
+              </select>
+            </div>
+            <div class="field" style="margin-bottom: 0">
+              <label for="theme-filter">Thème</label>
+              <select id="theme-filter" name="theme">
+                <option value="">Tous</option>
+              </select>
+            </div>
+          </form>
+
+          <div class="library-meta">
+            <p id="results-count" aria-live="polite">Chargement des mémoires...</p>
+            <button id="reset-filters" class="button secondary" type="button">Réinitialiser les filtres</button>
+          </div>
+
+          <div id="library-error" class="error hidden" role="alert" aria-live="polite"></div>
+          <div id="empty-state" class="panel hidden">
+            <p>Aucun mémoire ne correspond aux critères actuels.</p>
+          </div>
+
+          <div id="memoire-list" class="cards-grid" aria-live="polite"></div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p>Catalogue de la promotion · Consultation en ligne</p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./js/site.js"></script>
+    <script type="module" src="./js/library.js"></script>
+  </body>
+</html>

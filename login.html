@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Accès protégé | Bibliothèque des mémoires</title>
+    <meta name="description" content="Écran de protection par mot de passe pour la bibliothèque de mémoires." />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="./index.html">Atelier des Mémoires</a>
+        <nav aria-label="Navigation principale">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="./index.html">Accueil</a></li>
+            <li><a class="nav-link" href="./about.html">À propos</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="page page-enter auth-layout">
+      <section class="login-card" aria-labelledby="login-title">
+        <h1 id="login-title">Accès à la bibliothèque</h1>
+        <p>
+          Cet espace est réservé aux personnes autorisées par l'école. Saisissez le mot de passe transmis par
+          l'administration.
+        </p>
+
+        <div id="login-error" class="error hidden" role="alert" aria-live="polite"></div>
+
+        <form id="login-form" novalidate>
+          <div class="field">
+            <label for="password">Mot de passe</label>
+            <input id="password" name="password" type="password" autocomplete="current-password" required />
+          </div>
+
+          <div class="field" style="margin-top: -0.2rem">
+            <label style="display: flex; align-items: center; gap: 0.55rem; font-weight: 460">
+              <input id="remember" type="checkbox" />
+              Se souvenir de moi pendant 7 jours sur cet appareil
+            </label>
+          </div>
+
+          <button id="submit-button" class="button" type="submit">Entrer</button>
+          <p class="helper-text" style="margin-top: 0.8rem">
+            Protection adaptée à un site statique. Ce n'est pas un système de sécurité serveur forte.
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Bibliothèque de promotion · École d'art-thérapie</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/login.js"></script>
+  </body>
+</html>

@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>À propos | Atelier des Mémoires</title>
+    <meta
+      name="description"
+      content="Présentation du projet de bibliothèque de mémoires de promotion d'une école d'art-thérapie."
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+    <header class="site-header">
+      <div class="container">
+        <a class="brand" href="./index.html">Atelier des Mémoires</a>
+        <nav aria-label="Navigation principale">
+          <ul class="nav-list">
+            <li><a class="nav-link" href="./index.html">Accueil</a></li>
+            <li><a class="nav-link" href="./library.html">Bibliothèque</a></li>
+            <li><a class="nav-link" href="./about.html" aria-current="page">À propos</a></li>
+            <li>
+              <button id="logout-button" class="button secondary hidden" type="button">Se déconnecter</button>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main id="main-content" class="page page-enter">
+      <section class="container panel" style="margin-bottom: 1rem">
+        <h1 class="section-title">À propos de la bibliothèque</h1>
+        <p>
+          La bibliothèque des mémoires est un espace de transmission pour conserver et rendre consultables les travaux
+          de fin d'études d'une promotion d'art-thérapie.
+        </p>
+        <p>
+          L'intention est de créer un lieu numérique apaisant, lisible et durable, où chaque mémoire peut être découvert
+          dans sa singularité : intention clinique, médiation artistique, posture d'accompagnement et réflexion éthique.
+        </p>
+      </section>
+
+      <section class="container cards-grid">
+        <article class="feature-card">
+          <h2>Esprit de la promotion</h2>
+          <p>
+            Une promotion engagée dans une pratique sensible de la relation d'aide, attentive aux processus créatifs,
+            aux parcours de soin et aux contextes institutionnels.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h2>Choix techniques</h2>
+          <p>
+            Site 100 % statique, auto-hébergeable sur GitHub Pages, avec ressources locales (PDF, images, PDF.js,
+            JavaScript natif) pour assurer pérennité et simplicité de maintenance.
+          </p>
+        </article>
+        <article class="feature-card">
+          <h2>Confidentialité relative</h2>
+          <p>
+            L'accès est protégé par mot de passe côté client, ce qui constitue une barrière raisonnable sans remplacer
+            une sécurité serveur forte.
+          </p>
+        </article>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <p>Projet de promotion · Bibliothèque sensible de mémoires</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./js/site.js"></script>
+  </body>
+</html>
