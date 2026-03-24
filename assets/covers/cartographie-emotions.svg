@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Couverture Cartographie des émotions</title>
+  <desc id="desc">Composition de cercles doux dans des tons crème et bleu grisé.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f7f4ef"/>
+      <stop offset="100%" stop-color="#dbe4e8"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <circle cx="260" cy="360" r="172" fill="#afbcc4" opacity="0.8"/>
+  <circle cx="500" cy="470" r="220" fill="#d7b4a3" opacity="0.62"/>
+  <circle cx="398" cy="680" r="170" fill="#8ea394" opacity="0.6"/>
+</svg>

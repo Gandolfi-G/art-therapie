@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Couverture Traces vivantes</title>
+  <desc id="desc">Illustration organique dans des tons terre cuite et sauge.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f6efe6"/>
+      <stop offset="100%" stop-color="#e5d4c4"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M120 670c60-180 210-280 390-240 120 26 170 146 136 230-42 104-190 165-330 131-136-33-232-63-196-121z" fill="#bf7f62" opacity="0.82"/>
+  <path d="M90 400c80-120 240-160 360-120 122 42 178 188 60 228-136 47-381-9-420-108z" fill="#8fa58e" opacity="0.8"/>
+  <circle cx="620" cy="212" r="90" fill="#d4a28f" opacity="0.72"/>
+</svg>

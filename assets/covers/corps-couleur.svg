@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000" role="img" aria-labelledby="title desc">
+  <title id="title">Couverture Corps et couleur</title>
+  <desc id="desc">Formes fluides et chaleureuses autour d'une silhouette abstraite.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#f8f2e9"/>
+      <stop offset="100%" stop-color="#ead8cd"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="1000" fill="url(#bg)"/>
+  <path d="M190 860c-40-160 100-300 220-430 75-80 143-189 210-180 66 9 107 95 83 170-35 109-154 194-189 305-28 91-16 154-78 191-84 49-222 14-246-56z" fill="#c47f63" opacity="0.8"/>
+  <path d="M130 530c-26-122 88-244 220-236 126 7 218 123 170 198-61 95-365 162-390 38z" fill="#8c9e8f" opacity="0.7"/>
+</svg>
