@@ -1,0 +1,32 @@
+[
+  {
+    "slug": "traces-vivantes",
+    "title": "Traces vivantes : geste, matière et apaisement",
+    "author": "Léa Martin",
+    "year": 2024,
+    "themes": ["Corps", "Matière", "Apaisement"],
+    "summary": "Ce mémoire explore comment les matières naturelles et le travail du geste soutiennent l'apaisement émotionnel en atelier d'art-thérapie.",
+    "cover": "./assets/covers/traces-vivantes.svg",
+    "pdf": "./pdfs/memoire-traces-vivantes.pdf"
+  },
+  {
+    "slug": "cartographie-emotions",
+    "title": "Cartographie des émotions en atelier collectif",
+    "author": "Nora Delcourt",
+    "year": 2023,
+    "themes": ["Groupe", "Émotions", "Médiations"],
+    "summary": "Une étude des dispositifs collectifs qui permettent de représenter les émotions et de renforcer l'écoute entre participant·es.",
+    "cover": "./assets/covers/cartographie-emotions.svg",
+    "pdf": "./pdfs/memoire-cartographie-emotions.pdf"
+  },
+  {
+    "slug": "corps-couleur",
+    "title": "Corps et couleur : vers une présence sensible",
+    "author": "Maya Renaud",
+    "year": 2022,
+    "themes": ["Couleur", "Présence", "Rituel"],
+    "summary": "Recherche autour de rituels colorés favorisant l'ancrage corporel, la régulation émotionnelle et l'expression symbolique.",
+    "cover": "./assets/covers/corps-couleur.svg",
+    "pdf": "./pdfs/memoire-corps-couleur.pdf"
+  }
+]
