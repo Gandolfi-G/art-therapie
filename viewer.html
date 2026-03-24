@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Consultation du mémoire | Atelier des Mémoires</title>
+    <meta name="description" content="Visionneuse PDF intégrée des mémoires de promotion." />
+    <link rel="stylesheet" href="./css/main.css" />
+    <script type="module" src="./js/guard.js"></script>
+  </head>
+  <body class="requires-auth auth-pending">
+    <noscript>
+      <div class="container" style="margin-top: 2rem">
+        <p class="error">JavaScript est nécessaire pour vérifier l'accès et afficher la visionneuse PDF.</p>
+      </div>
+    </noscript>
+
+    <div class="site-shell">
+      <a class="skip-link" href="#main-content">Aller au contenu</a>
+
+      <header class="site-header">
+        <div class="container">
+          <a class="brand" href="./index.html">Atelier des Mémoires</a>
+          <nav aria-label="Navigation principale">
+            <ul class="nav-list">
+              <li><a class="nav-link" href="./index.html">Accueil</a></li>
+              <li><a class="nav-link" href="./library.html">Bibliothèque</a></li>
+              <li><a class="nav-link" href="./about.html">À propos</a></li>
+              <li>
+                <button id="logout-button" class="button secondary" type="button">Se déconnecter</button>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <main id="main-content" class="page page-enter">
+        <section class="container">
+          <div id="viewer-error" class="error hidden" role="alert" aria-live="polite"></div>
+
+          <div class="viewer-layout">
+            <aside class="panel viewer-panel" aria-labelledby="memoire-title">
+              <a class="button secondary" href="./library.html" style="margin-bottom: 1rem">← Retour à la bibliothèque</a>
+              <h1 id="memoire-title">Chargement...</h1>
+              <p class="muted" id="memoire-author"></p>
+              <p class="muted" id="memoire-year"></p>
+              <div id="memoire-themes" class="badge-row"></div>
+              <p id="memoire-summary"></p>
+              <p class="helper-text">La visionneuse masque les actions de téléchargement et d'impression dans l'interface.</p>
+            </aside>
+
+            <section class="viewer-shell" aria-label="Visionneuse du mémoire">
+              <div class="viewer-toolbar">
+                <button id="prev-page" type="button">Page précédente</button>
+                <button id="next-page" type="button">Page suivante</button>
+                <span id="page-indicator" class="muted" aria-live="polite">Page - / -</span>
+                <button id="zoom-out" type="button">- Zoom</button>
+                <button id="zoom-in" type="button">+ Zoom</button>
+                <button id="fit-width" type="button">Ajuster</button>
+                <span id="viewer-status" class="muted" aria-live="polite"></span>
+              </div>
+              <div class="viewer-canvas-wrap" id="viewer-canvas-wrap">
+                <canvas id="pdf-canvas" aria-label="Page du mémoire"></canvas>
+              </div>
+            </section>
+          </div>
+        </section>
+      </main>
+
+      <footer class="site-footer">
+        <div class="container">
+          <p>Consultation numérique des mémoires de la promotion</p>
+        </div>
+      </footer>
+    </div>
+
+    <script type="module" src="./js/site.js"></script>
+    <script type="module" src="./js/viewer.js"></script>
+  </body>
+</html>
